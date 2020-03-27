@@ -1,0 +1,11 @@
+@media only screen and (max-width: 891px) { 
+    .perfil-habilidade {
+        display: block;
+    }
+    .nome-contato h1 {
+        font-size: 40px;
+    }
+    footer p {
+        font-size: 12px;
+    }
+}
