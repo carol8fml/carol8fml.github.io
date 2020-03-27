@@ -2,7 +2,7 @@ body {
 font-family: 'Montserrat', sans-serif;
 width: 100%;
 margin: 0 auto;
-background-color:  #B5B5B5;
+background-color:  #CFCFCF;
 color: #404040;
 transition: all .8s ease;
 }
@@ -63,7 +63,7 @@ color: #ededed;
 }
 .dark-mode main {
 color: #404040;
-background-color:  #B5B5B5;
+background-color:  #CFCFCF;
 }
 .dark-mode header img {
 filter: brightness(476%) /*clarear a imagem no modo noturno*/
@@ -107,7 +107,6 @@ label:active:after {
 width: 130px;
 }
 /*estilo do switch */
-
 main img {
 border: #ebebeb 10px solid;
 box-shadow: 2px 4px 6px #404040;
