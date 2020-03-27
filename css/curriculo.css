@@ -10,6 +10,7 @@ transition: all .8s ease;
 background-color: #404040;
 color: #ededed;
 transition: all .4s ease;
+width: 100%;
 }
 .dark-mode .voltar, .dark-mode footer, .dark-mode .redes-socias a, .dark-mode .botao {
 color: #ededed;
