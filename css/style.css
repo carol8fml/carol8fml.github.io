@@ -1,156 +1,193 @@
 body {
-font-family: 'Montserrat', sans-serif;
-width: 100%;
-margin: 0 auto;
-background-color:  #CFCFCF;
-color: #404040;
-transition: all .8s ease;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #CFCFCF;
+    color: #404040;
+    transition: all .8s ease;
 }
-header{
-padding: 30px 0;
-display: flex;
-align-items: center;
-justify-content: space-around;
 
+header {
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
+
 .logo-nome-texto {
-display: flex;
-align-items: center;
+    display: flex;
+    align-items: center;
 }
+
 header img {
-width: 150px;
-height: 150px;
+    width: 150px;
+    height: 150px;
 }
+
 .textos-header {
-margin-left: 30px;
+    margin-left: 30px;
 }
-.textos-header h1 { 
-font-family: 'Anton', sans-serif;
-text-transform: uppercase; 
-font-size: 40px;
+
+.textos-header h1 {
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
 }
+
 .textos-header p {
-font-size: 20px;
-margin-top: 20px;
-line-height: 15px;
-} 
-.redes-socias{
-display: flex;
-align-items: center;
-font-size: 50px;
+    font-size: 20px;
+    margin-top: 20px;
+    line-height: 15px;
 }
+
+.redes-socias {
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+}
+
 .redes-socias a {
-margin-right: 20px;
-color: #404040;
+    margin-right: 20px;
+    color: #404040;
 }
+
+
 /*fim do cabeçalho*/
+
 main {
-background-color:white ;
-display: flex;
-align-items: center;
-justify-content: center;
-padding: 40px 0;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
 }
+
+
 /*versão do modo escuro*/
+
 .dark-mode {
-background-color: #404040;
-color: #ededed;
-transition: all .4s ease;
-width: 100%;
+    background-color: #404040;
+    color: #ededed;
+    transition: all .4s ease;
+    width: 100%;
 }
-.dark-mode footer, .dark-mode .redes-socias a, .dark-mode .botao {
-color: #ededed;
+
+.dark-mode footer,
+.dark-mode .redes-socias a,
+.dark-mode .botao {
+    color: #ededed;
 }
+
 .dark-mode main {
-color: #404040;
-background-color:  #CFCFCF;
+    color: #404040;
+    background-color: #CFCFCF;
 }
+
 .dark-mode header img {
-filter: brightness(476%) /*clarear a imagem no modo noturno*/
+    filter: brightness(476%)/*clarear a imagem no modo noturno*/
 }
+
+
 /*versão do modo escuro*/
+
+
 /*estilo do switch */
-input[type=checkbox]{
-height: 0;
-width: 0;
-visibility: hidden;
+
+input[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
 }
+
 label {
-cursor: pointer;
-text-indent: -9999px;
-width: 100px;
-height: 40px;
-background: #404040;
-display: block;
-border-radius: 100px;	
-position: relative;
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 100px;
+    height: 40px;
+    background: #404040;
+    display: block;
+    border-radius: 100px;
+    position: relative;
 }
-label:after { /*bolinha*/
-content: '';
-position: absolute;
-top: 5px;
-left: 5px;
-width: 30px;
-height: 30px;
-background: #fff;
-border-radius: 90px;
-transition: 0.3s;
+
+label:after {
+    /*bolinha*/
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 90px;
+    transition: 0.3s;
 }
-input:checked + label {
-background:  #CFCFCF;
+
+input:checked+label {
+    background: #CFCFCF;
 }
-input:checked + label:after {
-left: calc(100% - 5px);
-transform: translateX(-100%);
+
+input:checked+label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
 }
+
 label:active:after {
-width: 130px;
+    width: 130px;
 }
+
+
 /*estilo do switch */
+
 main img {
-border: #ebebeb 10px solid;
-box-shadow: 2px 4px 6px #404040;
-border-radius: 50%;
-width: 300px;
-height: 300px;
-object-fit: cover;
+    border: #ebebeb 10px solid;
+    box-shadow: 2px 4px 6px #404040;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
 }
+
 main p {
-width: 500px;
-font-size: 20px;
-line-height: 25px;
-margin-left: 60px;
+    width: 500px;
+    font-size: 20px;
+    line-height: 25px;
+    margin-left: 60px;
 }
+
 .texto-curriculo {
-display: flex;
-flex-direction: column;
-align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 .botao {
-/* botão em um todo*/
-margin-top: 50px;
-width: 300px;
-height: 45px;
-background-color:#404040;
-border-radius: 10px;
-box-shadow: 0px 4px 4px #4040407c;
-/*texto dentro do botão*/
-text-decoration: none;
-font: 1.40em 'Anton', sans-serif;
-text-align: center;
-color:  #CFCFCF;
-/*Posicionamento*/
-display: flex;
-align-items: center;
-justify-content: center;
-/*Efeito da letra
+    /* botão em um todo*/
+    margin-top: 50px;
+    width: 300px;
+    height: 45px;
+    background-color: #404040;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px #4040407c;
+    /*texto dentro do botão*/
+    text-decoration: none;
+    font: 1.40em 'Anton', sans-serif;
+    text-align: center;
+    color: #CFCFCF;
+    /*Posicionamento*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*Efeito da letra
 text-shadow: 1px 1px 5px  #404040; */
 }
+
 footer {
-color:#404040;
-text-align: center;
-padding: 30px 0 20px;
+    color: #404040;
+    text-align: center;
+    padding: 30px 0 20px;
 }
+
 footer p {
-font-size: 20px;
+    font-size: 20px;
 }
